@@ -1,0 +1,86 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <title>表示ページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="buttongroup">
+        <div class="buttonrow">
+            <button id="openwindowbutton" class="btn btn--orange">ブラウザを開く</button>
+            <button id="openwindowbutton" class="btn btn--orange">ブラウザを開く</button>
+            <button id="closewindowbutton">ウィンドウを閉じる</button>
+        </div>
+        <div class="buttonrow">
+            <button id="getaccesstoken">アクセストークンの表示</button>
+            <button id="getprofilebutton">プロフィール情報の表示</button>
+            <button id="sendmessagebutton">メッセージを送信する</button>
+        </div>
+    </div>
+
+    <div id="accesstokendata">
+        <h2>アクセストークン</h2>
+        <a href="#" onclick="toggleAccessToken()">アクセストークンを閉じる</a>
+        <table border="1">
+            <tr>
+                <th>アクセストークン</th>
+                <td id="accesstokenfield"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="profileinfo">
+        <h2>プロフィール</h2>
+        <a href="#" onclick="toggleProfileData()">プロフィールを閉じる</a>
+        <div id="profilepicturediv">
+        </div>
+        <table border="1">
+            <tr>
+                <th>ユーザID</th>
+                <td id="useridprofilefield"></td>
+            </tr>
+            <tr>
+                <th>表示名</th>
+                <td id="displaynamefield"></td>
+            </tr>
+            <tr>
+                <th>ステータスメッセージ</th>
+                <td id="statusmessagefield"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="liffdata">
+        <h2>LIFFデータ</h2>
+        <table border="1">
+            <tr>
+                <th>言語</th>
+                <td id="languagefield"></td>
+            </tr>
+            <tr>
+                <th>context.viewType</th>
+                <td id="viewtypefield"></td>
+            </tr>
+            <tr>
+                <th>context.userId</th>
+                <td id="useridfield"></td>
+            </tr>
+            <tr>
+                <th>context.utouId</th>
+                <td id="utouidfield"></td>
+            </tr>
+            <tr>
+                <th>context.roomId</th>
+                <td id="roomidfield"></td>
+            </tr>
+            <tr>
+                <th>context.groupId</th>
+                <td id="groupidfield"></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+    <script src="liff-starter.js"></script>
+</body>

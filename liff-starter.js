@@ -16,7 +16,7 @@ function initializeApp(data) {
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             //url: 'https://line.me'
-            url: 'http://te-to.net/'
+            url: './page1.html'
         });
     });
 
