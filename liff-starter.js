@@ -20,6 +20,15 @@ function initializeApp(data) {
         });
     });
 
+    // 内部URLを開く
+    document.getElementById('openinnerwindowbutton').addEventListener('click', function () {
+        liff.openWindow({
+            //url: 'https://line.me'
+            url: './page1.html',
+            external: false,
+        });
+    });
+
     // ウィンドウを閉じる
     document.getElementById('closewindowbutton').addEventListener('click', function () {
         liff.closeWindow();
