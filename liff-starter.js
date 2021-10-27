@@ -16,7 +16,7 @@ function initializeApp(data) {
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             //url: 'https://line.me'
-            url: 'https://www.04limitedsazabys.com/'
+            url: 'http://te-to.net/'
         });
     });
 
@@ -32,26 +32,9 @@ function initializeApp(data) {
             text: "メッセージが送れたよ！やったー!"
         }, {
             type: 'sticker',
-            packageId: '446',
-            stickerId: '1988'
-        },
-        {
-            "type": "text",
-            "text": "$ LINE emoji $",
-            "emojis": [
-              {
-                "index": 0,
-                "productId": "5ac1bfd5040ab15980c9b435",
-                "emojiId": "001"
-              },
-              {
-                "index": 13,
-                "productId": "5ac1bfd5040ab15980c9b435",
-                "emojiId": "002"
-              }
-            ]
-        }
-        ]).then(function () {
+            packageId: '2',
+            stickerId: '144'
+        }]).then(function () {
             window.alert("メッセージを送信しました");//送信後にアラートを表示する
         }).catch(function (error) {
             window.alert("メッセージの送信に失敗しました: " + error);
