@@ -25,7 +25,7 @@ function initializeApp(data) {
         liff.openWindow({
             //url: 'https://line.me'
             url: './page1.html',
-            external: false,
+            external: 'false',
         });
     });
 
