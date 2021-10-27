@@ -12,7 +12,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-    // openWindow call
+    // 外部URLを開く
     document.getElementById('openwindowbutton').addEventListener('click', function () {
         liff.openWindow({
             //url: 'https://line.me'
@@ -20,24 +20,24 @@ function initializeApp(data) {
         });
     });
 
-    // closeWindow call
+    // ウィンドウを閉じる
     document.getElementById('closewindowbutton').addEventListener('click', function () {
         liff.closeWindow();
     });
 
-    // sendMessages call
+    // メッセージを送信する
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-        liff.sendMessages([{
+        liff.sendMessages([{//送信メッセージ
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: "メッセージが送れたよ！やったー!"
         }, {
             type: 'sticker',
-            packageId: '2',
+            packageId: '1',
             stickerId: '144'
         }]).then(function () {
-            window.alert("Message sent");
+            window.alert("メッセージを送信しました");//送信後にアラートを表示する
         }).catch(function (error) {
-            window.alert("Error sending message: " + error);
+            window.alert("メッセージの送信に失敗しました: " + error);
         });
     });
 
