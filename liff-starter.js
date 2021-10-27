@@ -34,11 +34,14 @@ function initializeApp(data) {
             type: 'sticker',
             packageId: '2',
             stickerId: '144'
-        }]).then(function () {
-            window.alert("メッセージを送信しました");//送信後にアラートを表示する
-        }).catch(function (error) {
-            window.alert("メッセージの送信に失敗しました: " + error);
-        });
+        }])
+        // .then(function () {
+        //     window.alert("メッセージを送信しました");//送信後にアラートを表示する
+        // })
+        // .catch(function (error) {
+        //     window.alert("メッセージの送信に失敗しました: " + error);
+        // }
+        // );
     });
 
     // get access token
