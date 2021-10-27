@@ -34,22 +34,6 @@ function initializeApp(data) {
             type: 'sticker',
             packageId: '2',
             stickerId: '144'
-        },
-        {
-            "type": "text",
-            "text": "$ LINE emoji $",
-            "emojis": [
-              {
-                "index": 0,
-                "productId": "5ac1bfd5040ab15980c9b435",
-                "emojiId": "001"
-              },
-              {
-                "index": 13,
-                "productId": "5ac1bfd5040ab15980c9b435",
-                "emojiId": "002"
-              }
-            ]
         }]).then(function () {
             window.alert("メッセージを送信しました");//送信後にアラートを表示する
         }).catch(function (error) {
